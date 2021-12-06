@@ -9,6 +9,10 @@ namespace KID
     /// </summary>
     public class DataLoadAndSaveBase : MonoBehaviour
     {
+        [Header("要儲存的資料")]
+        public GoldManager goldManager;
+        public Transform player;
+
         #region 方法：公開並允許複寫
         /// <summary>
         /// 儲存資料

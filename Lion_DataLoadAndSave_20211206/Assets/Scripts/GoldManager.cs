@@ -17,10 +17,11 @@ namespace KID
         public LayerMask layerTarget;
         [Header("金幣數量")]
         public Text textCoin;
+        [HideInInspector]
+        public int goldCount;
         #endregion
 
         #region 欄位：私人
-        private int goldCount;
         #endregion
 
         #region 屬性：私人
@@ -58,6 +59,16 @@ namespace KID
                 goldCount++;
                 textCoin.text = "金幣數量：" + goldCount;
             }
+        }
+        #endregion
+
+        #region 方法：公開
+        /// <summary>
+        /// 更新資料
+        /// </summary>
+        public void UpdateData()
+        {
+            textCoin.text = "金幣數量：" + goldCount;
         }
         #endregion
     }
