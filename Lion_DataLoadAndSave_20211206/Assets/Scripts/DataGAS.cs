@@ -42,9 +42,11 @@ namespace KID
             form.AddField("row", 2);
             form.AddField("col", 1);
             StartCoroutine(LoadGASData("ª÷¹ô"));
+            form = new WWWForm();
             form.AddField("row", 2);
             form.AddField("col", 2);
             StartCoroutine(LoadGASData("®y¼Ð X"));
+            form = new WWWForm();
             form.AddField("row", 2);
             form.AddField("col", 3);
             StartCoroutine(LoadGASData("®y¼Ð Y"));
